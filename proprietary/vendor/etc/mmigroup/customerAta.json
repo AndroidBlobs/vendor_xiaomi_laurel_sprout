@@ -1,0 +1,227 @@
+{
+  "itemConfig": [
+    {
+      "showName": "Proximity_st",
+      "action": "com.mmigroup.action.PROXIMITY_XM",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "distance_tolerance": 0.5,
+        "specialTest": true,
+        "min":0,
+        "max":1000
+      }
+    },
+    {
+      "showName": "Proximity",
+      "action": "com.mmigroup.action.PROXIMITY",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "distance_tolerance": 0.5,
+        "do_calibration": {
+          "support": false
+        }
+      }
+    },
+    {
+      "showName": "Proximity_C",
+      "action": "com.mmigroup.action.PROXIMITY_XM",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "distance_tolerance": 0.5,
+        "rawData": {
+          "min": 0,
+          "max": 1000
+        },
+        "do_calibration": {
+          "support": true,
+          "4_cm_minus_no_cover_min": 60,
+          "3_cm_minus_no_cover_min": 200,
+          "3_cm_minus_4_cm_min": 100,
+          "3_cm": {
+            "min": 0,
+            "max": 20000
+          },
+          "4_cm": {
+            "min": 0,
+            "max": 18000
+          },
+          "noCover": {
+            "min": 1,
+            "max": 8000
+          },
+          "tpmodel_table": {
+            "EBBG": {
+              "WHITE": 0.56,
+              "BLACK": 0.57
+            },
+            "BOEN": {
+              "WHITE": 0.57,
+              "BLACK": 0.57
+            },
+            "CSOT": {
+              "WHITE": 0.58,
+              "BLACK": 0.58
+            },
+            "o-film": {
+              "WHITE": 0.3085,
+              "BLACK": 0.3085
+            },
+            "TRULY": {
+              "WHITE": 0.3247,
+              "BLACK": 0.3247
+            },
+            "LENS": {
+              "WHITE": 0.5622,
+              "BLACK": 0.5788
+            },
+            "default": {
+              "ALL": 0.3
+            }
+          }
+        },
+        "calibration_apply": false,
+        "calibration_scheme":"xiaomi_qcom"
+      }
+    },
+    {
+      "showName": "Optical",
+      "action": "com.mmigroup.action.OPTICAL",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "lux_std": 297,
+        "lux_pet": 99,
+        "is_check_range": true
+      }
+    },
+    {
+      "showName": "Optical_c",
+      "action": "com.mmigroup.action.OPTICAL",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "lux_std": 297,
+        "lux_pet": 99,
+        "is_check_range": false,
+        "calibration_scheme":"xiaomi_qcom",
+        "calibration_apply": false,
+        "do_calibration": true,
+        "coef":{
+          "min":200,
+          "max":3800
+        }
+      }
+    },
+    {
+      "showName": "Accelerometer_C",
+      "action": "com.mmigroup.action.ACCELEROMETER_C",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "support_calibrate": true,
+        "support_axialresult": false,
+        "support_angle45": false,
+        "support_angleneg45": false,
+        "data_suffix_rate": 1000,
+        "gravity_45_degree_x": -4.9000,
+        "gravity_45_degree_y": 4.9000,
+        "gravity_45_degree_z": 6.9340,
+        "gravity_45_degree_tolerance": 0.71,
+        "gravity_axial_limit": 2.5,
+        "is_auto_calibrate": true
+      }
+    },
+    {
+      "showName": "Gyroscope_C",
+      "action": "com.mmigroup.action.GYROSCOPE_C",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "support_calibrate": true,
+        "support_test": false,
+        "gyroscope_tolerance": 9,
+        "is_auto_calibrate": true
+      }
+    },
+    {
+      "showName": "Magnetic",
+      "action": "com.mmigroup.action.MAGNETIC",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "magnetism_tolerance": 25.0,
+        "support_calibrate": true,
+        "support_disk": false
+      }
+    },
+    {
+      "showName": "Sar",
+      "action": "com.mmigroup.action.SAR",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "is_only_test_chip":false,
+        "support_calibrate": true,
+        "support_test": false,
+        "wifi": true,
+        "tel" : true,
+        "is_auto_calibrate": true
+      }
+    },
+    {
+      "showName": "Flashlight",
+      "action": "com.mmigroup.action.LightRandomTEST",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "Light": [
+          {
+            "type": "flashlith",
+            "name": "MainFlashlight",
+            "id": 0
+          }
+        ]
+      }
+    },
+    {
+      "showName": "LED",
+      "action": "com.mmigroup.action.LightRandomTEST",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "is_auto_open_led": true,
+        "ledIndex": 3,
+        "Light": [
+          {
+            "type": "led",
+            "name": "whiteLed",
+            "color": "red",
+            "id": 0
+          }
+        ]
+      }
+    },
+    {
+      "showName": "TpOpenShort",
+      "action": "com.mmigroup.action.TPOPENSHORT",
+      "support": true,
+      "automatic": true
+    },
+    {
+      "showName": "SMARTPA",
+      "action": "com.mmigroup.action.audioloop.SMARTPA",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "volume_rate":1.0,
+        "is_show_list":false,
+        "audioConfig":[
+          "mmitest=on;spk_calibrate=max98937"
+        ]
+      }
+    }
+  ]
+}

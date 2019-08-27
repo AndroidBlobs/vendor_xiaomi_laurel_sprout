@@ -1,0 +1,203 @@
+{
+  "itemConfig": [
+    {
+      "showName": "HsMicToReceiver",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.HsMicToReceiver",
+        "volume_rate": 1.0,
+        "hasHeadPhone": true,
+        "audioConfig": [
+          "mmitest=on;loopline=hsmic_receiver"
+        ],
+        "markedWords": "hsmictoReceiver_speakernotify"
+      }
+    },
+    {
+      "showName": "HsMicToSpeaker",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.HsMicToSpeaker",
+        "volume_rate": 1.0,
+        "hasHeadPhone": true,
+        "audioConfig": [
+          "mmitest=on;loopline=hsmic_speaker"
+        ],
+        "markedWords": "hsmictoSpeaker_speakernotify"
+      }
+    },
+    {
+      "showName": "HsMicToHeadPhone",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.HsMicToHeadPhone",
+        "volume_rate": 0.5,
+        "hasHeadPhone": true,
+        "audioConfig": [
+          "mmitest=on;loopline=hsmic_headphone"
+        ],
+        "markedWords": "hsmictoheadphone_speakernotify"
+      }
+    },
+    {
+      "showName": "MainMicToHeadPhone",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.MainMicToHeadPhone",
+        "volume_rate": 0.5,
+        "hasHeadPhone": true,
+        "audioConfig": [
+          "mmitest=on;loopline=mainmic_headphone"
+        ],
+        "markedWords": "mainmictoHeadphone_speakernotify"
+      }
+    },
+    {
+      "showName": "SubMicToHeadPhone",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.SubMicToHeadPhone",
+        "volume_rate": 0.5,
+        "hasHeadPhone": true,
+        "audioConfig": [
+          "mmitest=on;loopline=submic_headphone"
+        ],
+        "markedWords": "submictoHeadphone_speakernotify"
+      }
+    },
+    {
+      "showName": "Receiver",
+      "action": "com.mmigroup.action.audioloop.AUDIOPLAYER",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.Receiver",
+        "volume_rate": 1.0,
+        "is_show_list": false,
+        "audioConfig": [
+          "mmitest=on;outputdevice=receiver"
+        ]
+      }
+    },
+    {
+      "showName": "Speaker",
+      "action": "com.mmigroup.action.audioloop.AUDIOPLAYER",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.Speaker",
+        "volume_rate": 1.0,
+        "is_show_list": false,
+        "music_file": "/vendor/etc/mmigroup/spk.wav",
+        "audioConfig": [
+          "mmitest=on;outputdevice=speaker_ata"
+        ]
+      }
+    },
+    {
+      "showName": "MainMic",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "volume_rate": 0.5,
+        "loop_type": "saveFile",
+        "hasHeadPhone": false,
+        "music_file": "/sdcard/miccapture.wav",
+        "audioConfig": [
+          "mmitest=on;inputdevice=mainmic"
+        ],
+        "markedWords": "mainmictoFile"
+      }
+    },
+    {
+      "showName": "SubMic",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "volume_rate": 0.5,
+        "loop_type": "saveFile",
+        "hasHeadPhone": false,
+        "music_file": "/sdcard/miccapture.wav",
+        "audioConfig": [
+          "mmitest=on;inputdevice=submic"
+        ],
+        "markedWords": "submictoFile"
+      }
+    },
+    {
+      "showName": "SubMicToReceiver",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.SubMicToReceiver",
+        "volume_rate": 1.0,
+        "hasHeadPhone": false,
+        "audioConfig": [
+          "mmitest=on;loopline=submic_receiver"
+        ],
+        "markedWords": "submictoReceiver_speakernotify"
+      }
+    },
+    {
+      "showName": "MainMicToSpeaker",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.MainMicToSpeaker",
+        "volume_rate": 1.0,
+        "hasHeadPhone": false,
+        "audioConfig": [
+          "mmitest=on;loopline=mainmic_speaker"
+        ],
+        "markedWords": "mainmictoSpeaker_speakernotify"
+      }
+    },
+    {
+      "showName": "MainMicToReceiver",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.MainMicToReceiver",
+        "volume_rate": 1.0,
+        "hasHeadPhone": false,
+        "audioConfig": [
+          "mmitest=on;loopline=mainmic_receiver"
+        ],
+        "markedWords": "mainmictoReceiver_speakernotify"
+      }
+    },
+    {
+      "showName": "Vibrator",
+      "action": "com.mmigroup.action.VIBRATER",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "adb_ata": "action.adb.ata.Vibrator",
+        "is_auto_vibrate": true,
+        "shortInterval": [
+          200,
+          200
+        ],
+        "longInterval": [
+          200,
+          1000
+        ]
+      }
+    }
+  ]
+}
