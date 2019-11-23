@@ -1,0 +1,68 @@
+{
+  "itemConfig": [
+    {
+      "showName": "FrontCamera",
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "cameraId": 1,
+        "support_takepicture": true,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "pictureSize_Width":6560,
+        "pictureSize_Height":4920,
+        "auto_takepicture_delay":3200,
+        "picture_dir": "sdcard",
+        "picture_name": "camera_test"
+      }
+    },
+
+    {
+      "showName": "MainCamera",
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "cameraId": 0,
+        "support_takepicture": true,
+	"support_camera_facus":true,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "auto_takepicture_delay":3200,
+        "picture_dir": "sdcard",
+        "picture_name": "camera_test"
+      }
+    },
+    {
+      "showName": "MainCamera2",
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "cameraId": 20,
+        "support_takepicture": true,
+        "auto_takepicture": true,
+        "auto_takepicture_delay":3200,
+        "is_open_flashLight": false,
+        "picture_dir": "sdcard",
+        "picture_name": "camera_test"
+      }
+    },
+    {
+      "showName": "MainCamera3",
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "cameraId": 21,
+        "support_takepicture": true,
+        "auto_takepicture": true,
+        "auto_takepicture_delay":3200,
+        "is_open_flashLight": false,
+        "picture_dir": "sdcard",
+        "picture_name": "camera_test"
+      }
+    }
+  ]
+}

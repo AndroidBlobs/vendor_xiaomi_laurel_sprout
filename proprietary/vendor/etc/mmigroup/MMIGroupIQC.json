@@ -1,0 +1,39 @@
+{
+  "itemConfig": [
+    {
+      "showName": "TouchPal",
+      "action": "com.mmigroup.action.TOUCHPAL",
+      "support": true,
+      "automatic": false
+    },
+    {
+      "showName": "LCD",
+      "action": "com.mmigroup.action.LCD",
+      "support": true,
+      "automatic": false,
+      "support_autoTest_autopass": false,
+      "paramconfig": {
+        "auto_switch": false,
+        "first_three_delay": 2000,
+        "lcd_pic": [
+          "Color_R",
+          "Color_G",
+          "Color_B"
+        ]
+      }
+    },
+    {
+      "showName": "Backlight",
+      "action": "com.mmigroup.action.BACKLIGHT",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "brightness": [
+          10,
+          128,
+          255
+        ]
+      }
+    }
+  ]
+}
