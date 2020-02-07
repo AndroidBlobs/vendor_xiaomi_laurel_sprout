@@ -1,0 +1,18 @@
+service interfaces.factoryInterface@1.0-service /vendor/bin/hw/interfaces.factoryInterface@1.0-service
+    class late_start
+    user system
+    group system
+    seclabel u:r:factory_services:s0
+
+
+service create_factory_persist_file /vendor/bin/create_factory_persist_file
+    class late_start
+    user root
+    group system
+    seclabel u:r:factory_services:s0
+    oneshot
+
+on post-fs-data
+    mkdir /data/vendor/fac_sources/ -p
+    chown system system /data/vendor/fac_sources
+    chmod 0777 /data/vendor/fac_sources
