@@ -1,0 +1,39 @@
+#! /vendor/bin/sh
+
+factoryDir=/persist/factory
+api_level=`getprop ro.product.first_api_level`
+
+if [ "${api_level}" -ge "28" ];then
+    factoryDir=/mnt/vendor/persist/factory
+fi
+
+customNvDir=${factoryDir}/customNv
+if [ ! -d "${customNvDir}" ];then
+    mkdir -p ${customNvDir}
+fi
+
+if [ ! -f "${customNvDir}/CUSTOM_PRODUCT_INFO" ];then
+    dd if=/dev/zero of=${customNvDir}/CUSTOM_PRODUCT_INFO bs=1024 count=4
+fi
+
+if [ ! -f "${customNvDir}/CUSTOM_FACTORY_FLAG" ];then
+    dd if=/dev/zero of=${customNvDir}/CUSTOM_FACTORY_FLAG bs=1024 count=4
+fi
+
+if [ ! -f "${customNvDir}/USB_PORT_CTR" ];then
+    dd if=/dev/zero of=${customNvDir}/USB_PORT_CTR bs=1024 count=4
+fi
+
+chown -R system:system ${factoryDir}
+chown -R system:system ${customNvDir}
+chmod -R 0770 ${customNvDir}
+chown system:system ${customNvDir}/CUSTOM_PRODUCT_INFO
+chmod 0770 ${customNvDir}/CUSTOM_PRODUCT_INFO
+chown system:system ${customNvDir}/CUSTOM_FACTORY_FLAG
+chmod 0770 ${customNvDir}/CUSTOM_FACTORY_FLAG
+chown system:system ${customNvDir}/USB_PORT_CTR
+chmod 0770 ${customNvDir}/USB_PORT_CTR
+
+
+
+

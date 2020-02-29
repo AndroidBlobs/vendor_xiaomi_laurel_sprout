@@ -1,0 +1,4 @@
+BIN out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.mdt
+BIN out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.b00
+BIN out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.b01
+BIN out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.b02
