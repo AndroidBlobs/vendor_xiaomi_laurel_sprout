@@ -1,0 +1,124 @@
+warning: can't get env:${TARGET_EMMC_BOOTLOADER}.
+warning: can't get env:${OUT_IPA_FW}.
+warning: can't get env:${TARGET_EMMC_BOOTLOADER}.
+warning: can't get env:${OUT_IPA_FW}.
+warning: can't get env:${TARGET_EMMC_BOOTLOADER}.
+warning: can't get env:${OUT_IPA_FW}.
+The sign Project name: f9s_global
+Images: [{'path_except': [], 'path': ['out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.elf'], 'sign_id': 'gfx_microcode', 'extra_action': {'command': 'vendor/qcom/proprietary/common/scripts/pil-splitter.py', 'param': 'out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.elf out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap |tee out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/pilsplitter.log 2>&1'}}]
+For image_lists: ['out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.elf']
+File a610_zap.elf is being signed
+Logging to /home/work/laurel_sprout-q-stable-build/out/soong/.temp/tmpfIHore/SecImage_log.txt
+
+
+    SecImage launched as: "vendor/xiaomi/securebootsigner/Qualcomm/common/sign_images.py -c nicobar -p laurel_sprout --gpu"
+
+Config path is set to: /home/work/laurel_sprout-q-stable-build/vendor/xiaomi/securebootsigner/Qualcomm/lib/SecTools/config/nicobar/nicobar_secimage.xml
+------------------------------------------------------
+Processing 1/1: /home/work/laurel_sprout-q-stable-build/out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.elf
+
+/home/work/laurel_sprout-q-stable-build/out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.elf is already OEM-signed. Rerunning OEM sign.
+HSM Signer provided a root certificate
+HSM Signer provided a CA certificate
+HSM Signer provided an attest certificate
+HSM Signer provided a signature
+[32mSigned image is stored at /home/work/laurel_sprout-q-stable-build/out/soong/.temp/tmpfIHore/nicobar/gfx_microcode/a610_zap.elf[39m
+OEM signed image with RSAPSS
+Image /home/work/laurel_sprout-q-stable-build/out/soong/.temp/tmpfIHore/nicobar/gfx_microcode/a610_zap.elf signature is valid
+Image /home/work/laurel_sprout-q-stable-build/out/soong/.temp/tmpfIHore/nicobar/gfx_microcode/a610_zap.elf is not encrypted
+
+Base Properties: 
+| Integrity Check             | True  |
+| Signed                      | True  |
+| Encrypted                   | False |
+| Size of signature           | 256   |
+| Size of one cert            | 2048  |
+| Num of certs in cert chain  | 3     |
+| Number of root certs        | 1     |
+| Maximum number of root certs| None  |
+| Cert chain size             | 6144  |
+
+ELF Properties: 
+Header: 
+| Magic                      | ELF                           |
+| Class                      | ELF32                          |
+| Data                       | 2's complement, little endian  |
+| Version                    | 1 (Current)                    |
+| OS/ABI                     | No extensions or unspecified   |
+| ABI Version                | 0                              |
+| Type                       | EXEC (Executable file)         |
+| Machine                    | 164                            |
+| Version                    | 0x1                            |
+| Entry address              | 0x00005000                     |
+| Program headers offset     | 0x00000034                     |
+| Section headers offset     | 0x00000000                     |
+| Flags                      | 0x00000003                     |
+| ELF header size            | 52                             |
+| Program headers size       | 32                             |
+| Number of program headers  | 1                              |
+| Section headers size       | 0                              |
+| Number of section headers  | 0                              |
+| String table section index | 0                              |
+
+Program Headers: 
+| Num | Type | Offset | VirtAddr | PhysAddr | FileSize | MemSize | Flags |   Align   |
+|-----|------|--------|----------|----------|----------|---------|-------|-----------|
+|  1  | LOAD | 0x3000 |  0x5000  |  0x5000  |  0x830   |  0x830  |  RWE  | 0x100000  |
+
+Hash Segment Properties: 
+| Header Size     | 168B  |
+| Hash Algorithm  | sha384|
+
+Header: 
+| cert_chain_ptr              | 0xffffffff  |
+| cert_chain_size             | 0x00001800  |
+| cert_chain_size_qti         | 0x00000000  |
+| code_size                   | 0x00000090  |
+| image_id                    | 0x00000000  |
+| image_size                  | 0x00001990  |
+| metadata_major_version      | 0x00000000  |
+| metadata_major_version_qti  | 0x00000000  |
+| metadata_minor_version      | 0x00000000  |
+| metadata_minor_version_qti  | 0x00000000  |
+| metadata_size               | 0x00000078  |
+| metadata_size_qti           | 0x00000000  |
+| sig_ptr                     | 0xffffffff  |
+| sig_size                    | 0x00000100  |
+| sig_size_qti                | 0x00000000  |
+| version                     | 0x00000006  |
+Metadata:
+| anti_rollback_version        | 0x00000000  |
+| app_id                       | 0x00000000  |
+| debug                        | 0x00000001  |
+| hw_id                        | 0x0010a0e1  |
+| in_use_soc_hw_version        | 0x00000001  |
+| model_id                     | 0x00000000  |
+| mrc_index                    | 0x00000000  |
+| multi_serial_numbers         | 0x00000000  |
+| oem_id                       | 0x00000072  |
+| oem_id_independent           | 0x00000000  |
+| root_revoke_activate_enable  | 0x00000000  |
+| rot_en                       | 0x00000000  |
+| soc_vers                     | 0x00009001  |
+| sw_id                        | 0x00000014  |
+| uie_key_switch_enable        | 0x00000000  |
+| use_serial_number_in_signing | 0x00000000  |
+
+
+------------------------------------------------------
+
+SUMMARY:
+Following actions were performed: "sign, validate"
+Output is saved at: /home/work/laurel_sprout-q-stable-build/out/soong/.temp/tmpfIHore
+
+| Idx |     SignId    | Parse | Integrity | Sign | Encrypt |              Validate              |
+|     |               |       |           |      |         | Parse | Integrity | Sign | Encrypt |
+|-----|---------------|-------|-----------|------|---------|-------|-----------|------|---------|
+|  1. | gfx_microcode |   T   |     NA    |  T   |    NA   |   T   |     T     |  T   |    NA   |
+
+BIN out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.mdt
+BIN out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.b00
+BIN out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.b01
+BIN out/target/product/laurel_sprout/vendor/firmware/sign_xiaomi/a610_zap.b02
+File a610_zap.elf is signed successfully
+Output path is/home/work/laurel_sprout-q-stable-build/out/soong/.temp/tmpfIHore

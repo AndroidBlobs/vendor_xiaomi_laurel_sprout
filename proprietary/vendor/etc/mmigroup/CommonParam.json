@@ -1,0 +1,490 @@
+{
+  "S88512AA1": {
+    "systemConfig": {
+      "Widevine_Version": false
+    },
+    "itemConfig": {
+      "Sar": {
+        "support": false
+      }
+    }
+  },
+  "S88512BA1": {
+     "itemConfig": {
+        "Sar": {
+          "support": false
+        }
+      }
+   },
+
+  "S88512DA1": {
+    "itemConfig": {
+      "Sar": {
+        "support": true
+      }
+    }
+  },
+  "S88512CA1": {
+      "itemConfig": {
+        "Sar": {
+          "support": true
+        }
+      }
+  },
+
+  "call": {
+    "com.mmigroup.radiosupport.GSM": true,
+    "com.mmigroup.radiosupport.CDMA": false,
+    "com.mmigroup.radiosupport.TDCDMA": false,
+    "com.mmigroup.radiosupport.WCDMA": true,
+    "com.mmigroup.radiosupport.TDD": true,
+    "com.mmigroup.radiosupport.FDD": true
+  },
+
+  "S88512AA1": {
+    "call": {
+      "com.mmigroup.radiosupport.CDMA": true,
+      "com.mmigroup.radiosupport.TDCDMA": true
+    }
+  },
+
+  "mmigroupConfig": {
+    "com.mmigroup.support.statusbar": false,
+    "com.mmigroup.action.GYROSCOPE": false,
+    "support_icon": "factory_only",
+    "bootStartUp":false,
+    "camera_calibration_apk_package": "com.wingtech.cameraCalibration",
+    "camera_calibration_apk_cls_name": "com.wingtech.cameraCalibration.CameraActivity",
+    "camera_verify_apk_package": "com.wingtech.cameraCalibration",
+    "camera_verify_apk_cls_name": "com.wingtech.cameraCalibration.CameraActivity",
+    "camera_raw_apk_package": "com.wingtech.cameraCalibration",
+    "camera_raw_apk_cls_name": "com.wingtech.cameraCalibration.CameraActivity"
+  },
+  "systemConfig": {
+    "buildNumber": true,
+    "basebandVersion": true,
+    "kernelVersion": true,
+    "SW_Ver": true,
+    "HW_Ver": true,
+    "Modem": true,
+    "IMEI": true,
+    "MEID": true,
+    "SN": true,
+    "PhoneSN": true,
+    "EFS": true,
+    "FactoryTestMode": true,
+    "BoardID": true,
+    "RPMB_provisioned": true,
+    "FactoryID": true,
+    "Secureboot": true,
+    "Attestation": true,
+    "Widewine": false,
+    "IMEI_Check": true,
+    "IFAA_Version": true,
+    "FIDO_Version": true,
+    "Widevine_Version": true,
+    "MMIGroupVersion": true,
+    "FactoryInterfaceVersion": true,
+    "FactoryInterfaceHALVersion": true,
+    "DualCameraCalibration": false,
+    "CameraEfuseID": false,
+    "DualCameVerify": false,
+    "DualCameCali":false,
+    "FlashlightCali":false,
+    "Flash":true,
+    "Flash_fw":true,
+    "camera_match": false
+  },
+  "itemConfig": {
+    "MainMicToHeadPhone": {
+      "support": true
+    },
+    "MainMic": {
+      "support": true
+    },
+    "SubMic": {
+      "support": true
+    },
+    "MIMainMicToHeadphone": {
+      "support": true
+    },
+    "MISubMicToHeadphone": {
+      "support": true
+    },
+    "HsMicToHeadPhone": {
+      "support": true
+    },
+    "HsMicToReceiver": {
+      "support": true
+    },
+    "MainMicToReceiver": {
+      "support": true
+    },
+    "MainMicToSpeaker": {
+      "support": true,
+      "oldAct": [
+        "HMIC_EARPIECE_LOOPBACK",
+        "HMIC_HSPK_LOOPBACK",
+        "AUDIO_LOOPBACK"
+      ]
+    },
+    "HsMicToSpeaker": {
+      "support": true
+    },
+    "SubMicToReceiver": {
+      "support": true
+    },
+    "SubMicToHeadPhone": {
+      "support": true
+    },
+    "HsMicToSpeakerLeft": {
+      "support": false
+    },
+    "HsMicToSpeakerRight": {
+      "support": false
+    },
+    "Speaker": {
+      "support": true,
+      "oldAct": [
+        "SPEAKER",
+        "SPEAKER_TEST",
+        "AUDIO_LOUDSPEAKER"
+      ]
+    },
+    "Receiver": {
+      "support": true,
+      "oldAct": [
+        "AUDIO_HEADSET"
+      ]
+    },
+    "FM": {
+      "support": true
+    },
+    "HeadSet": {
+      "support": true
+    },
+    "FrontCamera": {
+      "support": true
+    },
+    "MainCamera": {
+      "support": true
+    },
+    "PlatMainCamera": {
+      "support": true,
+      "oldAct": [
+        "CAMERA_BACK"
+      ]
+    },
+    "PlatFrontCamera": {
+      "support": true,
+      "oldAct": [
+        "CAMERA_FRONT"
+      ]
+    },
+    "Flashlight": {
+      "support": true
+    },
+    "VersionInfo": {
+      "support": true,
+      "action": "com.mmigroup.action.FACTORYVERSION",
+      "paramconfig": {
+        "AddInfo": {
+          "SecureBoot": "any",
+          "verifiedbootstate": "any",
+          "System_Verity": "any",
+          "TPcolor": "any",
+          "CPUID": "any",
+          "TP": "any",
+          "RPMB": "any",
+          "BuildNumber": "any",
+          "BaseBandVersion": "any",
+          "KernelVersion": "any",
+          "eSETotalMemory": "any",
+          "LCM": "any"
+        }
+      },
+      "oldAct": [
+        "SYSTEM_INFO"
+      ]
+    },
+    "KeyPad": {
+      "support": true
+    },
+    "TouchPal": {
+      "support": true
+    },
+    "TouchPanel": {
+      "support": true
+    },
+    "TpOpenShort": {
+      "support": true
+    },
+    "LCD": {
+      "support": true
+    },
+    "LCD_R": {
+      "support": true
+    },
+    "LCD_G": {
+      "support": true
+    },
+    "LCD_B": {
+      "support": true
+    },
+    "LCD_W": {
+      "support": true
+    },
+    "LCD_BL": {
+      "support": true
+    },
+    "Backlight": {
+      "support": true,
+      "oldAct": [
+        "LCD_BACKLIGHT_ON",
+        "LCD_BACKLIGHT_HALF",
+        "LCD_BACKLIGHT"
+      ]
+    },
+    "Backlight_bright": {
+      "support": true
+    },
+    "Backlight_half": {
+      "support": true
+    },
+    "Backlight_dark": {
+      "support": true
+    },
+    "Vibrator": {
+      "support": true
+    },
+    "OTG": {
+      "support": true,
+      "oldAct": [
+        "USB_OTG"
+      ]
+    },
+    "RTC": {
+      "support": true
+    },
+    "LED": {
+      "support": true
+    },
+    "LED_R": {
+      "support": true
+    },
+    "LED_G": {
+      "support": true
+    },
+    "LED_B": {
+      "support": true
+    },
+    "LED_RGB": {
+      "support": true
+    },
+    "Accelerometer": {
+      "support": true,
+      "oldAct": [
+        "GSENSOR"
+      ]
+    },
+    "Accelerometer_C": {
+      "support": true,
+      "oldAct": [
+        "GSENSOR_C"
+      ]
+    },
+    "Gyroscope": {
+      "support": true
+    },
+    "Gyroscope_C": {
+      "support": true
+    },
+    "Proximity": {
+      "support": true
+    },
+    "Proximity_st": {
+      "support": true
+    },
+    "Proximity_C": {
+      "support": true,
+      "oldAct": [
+        "PROXIMITY_C_NOCOVER",
+        "PROXIMITY_C_COVER"
+      ]
+    },
+    "Magnetic": {
+      "support": true
+    },
+    "Optical": {
+      "support": true
+    },
+    "Optical_c": {
+      "support": true
+    },
+    "Hall": {
+      "support": true
+    },
+    "NFC": {
+      "support": true
+    },
+    "fingerprint": {
+      "support": true
+    },
+    "SMARTPA": {
+      "support": true
+    },
+    "TP_LockDown": {
+      "support": true
+    },
+    "Infrared": {
+      "support": true
+    },
+    "SdCard": {
+      "support": true
+    },
+    "MainSIMCard": {
+      "support": true
+    },
+    "SubSIMCard": {
+      "support": true
+    },
+    "Wlan": {
+      "support": true,
+      "oldAct": [
+        "WIFI"
+      ]
+    },
+    "WlanAP": {
+      "support": true,
+      "oldAct": [
+        "WIFI"
+      ]
+    },
+    "WlanAddress": {
+      "support": true,
+      "oldAct": [
+        "WIFI"
+      ]
+    },
+    "Bluetooth": {
+      "support": true,
+      "oldAct": [
+        "BLUETOOTH"
+      ]
+    },
+    "BluetoothAddress": {
+      "support": true,
+      "oldAct": [
+        "BLUETOOTH"
+      ]
+    },
+    "BluetoothDevice": {
+      "support": true,
+      "oldAct": [
+        "BLUETOOTH"
+      ]
+    },
+    "GPS": {
+      "support": true
+    },
+    "Charge": {
+      "support": true,
+      "oldAct": [
+        "BATTERY"
+      ]
+    },
+    "Battery": {
+      "support": true,
+      "oldAct": [
+        "BATTERY"
+      ]
+    },
+    "FrontFlashLight": {
+      "support": true
+    },
+    "Pressure": {
+      "support": false
+    },
+    "CALL112": {
+      "support": true
+    },
+    "KeyPadLight": {
+      "support": true
+    },
+    "MainMic2ToHeadPhone": {
+      "support": false
+    },
+    "SubMic2ToHeadPhone": {
+      "support": false
+    },
+    "MainMic2ToSpeaker": {
+      "support": false
+    },
+    "MainMic2ToReceiver": {
+      "support": false
+    },
+    "SubMicToSpeaker": {
+      "support": true
+    },
+    "Orientation": {
+      "support": true
+    },
+    "MainCamera2": {
+      "support": true
+    },
+    "Flashlight2": {
+      "support": false
+    },
+    "DualSIMCard": {
+      "support": true
+    },
+    "MiuiFrontCamera": {
+      "support": true
+    },
+    "MiuiMainCamera": {
+      "support": true
+    },
+   "LightTEST": {
+      "support": true
+    },
+    "Gyroscope_MMI": {
+      "support": true
+    },
+    "Accelerometer_MMI": {
+      "support": true,
+      "oldAct": [
+        "GSENSOR_MMI"
+      ]
+    },
+   "ASRebootInfo": {
+      "support": true
+    },
+    "Sar": {
+      "support": false
+    },
+    "MainCamera3": {
+      "support": true
+    },
+    "DualCamera": {
+      "support": true
+    },
+    "DualCamera2": {
+      "support": false
+    },
+    "ASLCDActivity": {
+      "support": true
+    },
+    "ASFlashLife": {
+      "support": true
+    },
+    "ASDeviceInfo": {
+      "support": true
+    },
+    "ASChargingRecord": {
+      "support": true
+    },
+    "ChargeIC": {
+      "support": false
+    }
+  }
+}
